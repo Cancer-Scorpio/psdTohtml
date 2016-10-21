@@ -1,0 +1,32 @@
+body,div,dl,dt,dd,ul,li,h1,h2,h3,h4,h5,h6,input,form,a,p,textarea{
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica neue",Helvetica,Arial,sans-serif;  
+}
+
+ol,ul,li{
+	list-style: none;/*列表所有属性*/
+}
+
+a{
+	text-decoration: none;/*文本修饰属性*/
+	display: block;/*元素被显示为块级元素，前后有换行符*/
+	color: #fff;
+}
+
+img{
+	border: none;
+	display:block;
+}
+
+.clearfloat{/*清除浮动*/
+	zoom:1;
+}
+
+.clearfloat:after{
+	display: block;
+	clear: both;/*左右两侧都不允许浮动元素*/
+	content: "";
+	visibility: hidden;/*设置不显示但是会占据空间*/
+	height: 0;
+}

@@ -1,0 +1,273 @@
+.index-banner{
+	position: relative;
+	background: #b3b3b3;
+}
+
+.index-banner-bg{
+	height: 570px;
+	overflow: hidden;
+}
+
+.index-banner-bg img{
+	margin:0 auto;
+}
+
+.index-banner-text{
+	position: absolute;
+	top: 200px;/*绝对定位才能使用top，表示离父元素的距离*/
+	left: 50%;
+	margin-left: -388px;/*再设置margin-left，像左移动宽度的一半，保证text区域始终在图片的中央。*/
+}
+
+.index-banner-text .text-logo{
+	width: 776px;
+	height: 113px;
+	background: url("../images/textlogo.png");
+}
+
+.index-banner-text .text-info{
+	margin-top: 17px;
+	text-align: center;
+	color: #fff;
+}
+
+.index-banner-text .text-info .line{
+	display:inline-block;/*inline和inline-block的区别是，后者可以改高宽，前者由图片本身决定。*/
+	width: 40px;
+	vertical-align: middle;/*位于父元素的垂直中间*/
+	border: 1px solid #fff;
+}
+
+.index-banner-text .text-info .line-l{
+	margin-right: 35px;
+}
+
+.index-banner-text .text-info .line-r{
+	margin-left: 35px;
+}
+
+.index-menu{
+	position: relative;
+	border-top:4px solid #f34949;
+}
+
+.index-menu .menu_tips{
+	position: absolute;
+	left: 50%;
+	top: 0;
+	margin-left: -78px;
+	width: 156px;
+	height: 75px;
+	text-align: center;
+	line-height: 65px;
+	color: #fff;
+	background: #f34949;
+}
+
+.index-menu .menu_tips:after{
+	position: absolute;
+	content: '';
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 78px solid transparent;
+	border-right: 78px solid transparent;
+	border-bottom: 10px solid #fff;
+}
+
+.index-menu .menu-list{
+	margin-top: 150px;
+	color:#6c6c6c;
+	overflow: hidden;/*循环遍历列表元素的时候能隐藏多余的部分*/
+}
+
+.index-menu .menu-list ul{
+	width: 1160px;
+}
+
+.index-menu .menu_item{
+	float: left;
+	width: 520px;
+	margin-right: 60px;
+	margin-bottom: 56px;
+}
+
+.index-menu .menu_item .title,.index-menu .menu_item .line{
+	float: left;
+}
+
+.index-menu .menu_item .title{
+	color:#6c6c6c;
+	width: 230px;
+	overflow: hidden;
+	white-space: nowrap;/*设置如何处理元素内的空白,nowrap表示文本不会换行，文本会在在同一行上继续，直到遇到 <br> 标签为止。*/
+	text-overflow:ellipsis;/*规定当文本溢出包含元素时发生的事情。ellipsis表示超出部分用...表示。*/
+}
+
+.index-menu .menu_item .line{
+	width: 192px;
+	margin-top: 10px;
+	border-top: 1px solid #e3e1e1;
+}
+
+.index-menu .menu_item .comment{
+	margin-top: 4px;
+	color:#cfcfcf;
+	font-size: 12px;
+}
+
+.index-menu .menu_item .price{
+	float: right;
+}
+
+.index-menu .menu-more-btn{
+	margin: 0 auto;
+	width: 114px;
+	height: 34px;
+	border: 1px solid #d7d5d5;
+	/*vertical-align: middle;一般设置单元格的垂直居中*/
+	padding-left: 16px;
+	font-size: 14px;
+	line-height: 32px;
+	color: #b7b7b7;
+}
+
+.index-menu .menu-more-btn .icon{
+	display: inline-block;
+	width: 17px;
+	height: 11px;
+	margin-left: 10px;
+	background: url("../images/icon.png") no-repeat;
+}
+
+.index-panel{
+	padding-top: 200px;
+	
+}
+
+/*.index-panel .index-panel-header{
+
+}*/
+
+.index-panel .index-panel-header h3{
+	font-size: 20px;
+	/*width: 196px;*/
+	color:#3b3b3b;
+	font-weight: normal;
+	/*line-height: 16px;*/
+	float: left;
+	margin-right: 48px;
+	/*border: 1px solid red;*/
+}
+
+.index-panel .index-panel-header .line{
+	float: left;
+	width: 200px;
+	border: 1px solid #e3e1e1;
+	margin-top: 10px;
+}
+
+.index-panel-header .btn-group{
+	float: right;
+	font-size: 0;
+	/*border: 1px solid red;*/
+}
+
+.index-panel-header .btn{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin-left: 11px;/*你会发现实际的间距是15px，想要去掉元素与元素之间的间距，用font-size: 0实现。*/
+	background: #dedede;
+	border-radius: 50%;
+}
+
+.index-panel-header .active{
+	background: #9b9b9b;
+}
+
+.index-panel-body{
+	margin-top: 75px;
+}
+
+.index-food-list{
+	overflow: hidden;
+}
+
+.index-food-list ul{
+	width: 1160px;
+}
+
+.index-food-list .panel-item{
+	float: left;
+	width: 230px;
+	/*height: 268px;*/
+	margin-right: 60px;
+	/*margin-bottom: 100px;*/
+}
+
+.index-food-list .banner{
+	margin-bottom: 30px;
+	height: 202px;
+}
+
+.index-food-list .item-name{
+	/*font-size: 14px;*/
+	color: #555555;
+	margin-bottom: 10px;
+}
+
+.index-food-list .item-name .price{
+	float: right;
+}
+
+.index-food-list .rank{
+	/*float: left;*/
+	font-size: 0px;
+}
+
+.index-food-list .rank .star{
+	display: inline-block;
+	width: 12px;
+	height: 13px;
+	margin-right: 5px;
+	background-image: url("../images/star.png");
+	background-repeat: no-repeat;
+}
+
+.index-food-list .rank .nostar{
+	background-position: 0 -11px;/*分别表示水平和垂直移动距离，-表示向上*/
+}
+
+.index-pics{
+	height: 380px;
+	overflow: hidden;
+	margin-bottom: 200px;
+}
+
+.index-pics .pic-col{
+	/*float: left;*/
+}
+
+.index-pics .pic-col-l{
+	float: left;
+	width: 353px;
+}
+
+.index-pics .pic-col-r{
+	float: left;
+	width: 460px;
+}
+
+.index-pics .pic-col-m{
+	float: left;
+	width: 287px;
+}
+
+.index-pics .pic-row2{
+	position: absolute;
+	top: 480px;
+	left: 353px;
+	z-index: -1;
+}
